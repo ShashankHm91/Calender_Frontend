@@ -18,7 +18,7 @@ const handleFetch = async (url, options = {}) => {
 export const fetchEvents = async () => {
   try {
     const data = await handleFetch(`${BASE_URL}event/getAllEvents`);
-    console.log(data);
+    // console.log(data);
 
     return data.map(event => ({
       ...event,
@@ -127,7 +127,7 @@ export const deleteEvent = async (eventId) => {
 // Login
 export const login = async (credentials) => {
   try {
-    console.log(credentials)
+    // console.log(credentials)
     const response = await handleFetch(`${BASE_URL}auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
