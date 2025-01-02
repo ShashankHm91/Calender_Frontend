@@ -46,7 +46,7 @@ const SignUp = () => {
 
         try {
             const response = await signUp(formData);
-            console.log(response);
+            // console.log(response);
             navigate("/login");
         } catch (error) {
             // Display exact error from API
