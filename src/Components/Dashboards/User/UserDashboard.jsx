@@ -158,14 +158,14 @@ const UserDashboard = () => {
     const selectedCompanyData = processedCompanies.filter(company =>
       selectedCompanies.includes(company.companyName)
     );
-    console.log(selectedCompanyData);
+    // console.log(selectedCompanyData);
     if (selectedCompanyData.length > 0) {
       setStatusChange(true);
     }
   };
 
   const updateStatus = (data) => {
-    console.log(data);
+    // console.log(data);
 
   }
 
