@@ -38,7 +38,7 @@ const AdminDashboard = () => {
   }, []);
 
   useEffect(() => {
-    console.log(events);
+    // console.log(events);
 
   }, [events]);  // This will run whenever 'events' changes
 
@@ -206,7 +206,7 @@ const AdminDashboard = () => {
         ...updatedEvent,
         date: new Date(updatedEvent.date),
       };
-      console.log("Event to update:", eventToUpdate);  // Ensure the communicationStatus is logged here
+      // console.log("Event to update:", eventToUpdate);  // Ensure the communicationStatus is logged here
 
       const updated = await updateEvent(eventToUpdate);
 
