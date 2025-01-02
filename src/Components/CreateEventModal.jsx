@@ -21,7 +21,7 @@ const CreateEventModal = ({
   if (!showModal) return null;
 
   const formatToDisplay = (date) => {
-    console.log(date);
+    // console.log(date);
     
     return date ? new Date(date).toISOString().slice(0, 16) : "";
   };
